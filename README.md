@@ -1,6 +1,7 @@
 <p align="center">
   <img src="TallyPage_logo.png" width="500">
 </p>
+
 # TallyPage v1.2.6
 
 A small browser-based color cue server for Companion or simple HTTP triggers.
