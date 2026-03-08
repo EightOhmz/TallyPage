@@ -1,6 +1,5 @@
-<p align="center">
-  <img src="TallyPage_logo.png" width="500">
-</p>
+<img src="TallyPage_logo.png" width="500">
+
 
 # TallyPage v1.2.6
 
