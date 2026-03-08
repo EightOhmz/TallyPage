@@ -1,2 +1,76 @@
-# TallyPage
-A simple HTTP color cue server for Bitfocus Companion and browser-based viewers.
+# Color Web Server v1.2.6
+
+A small browser-based color cue server for Companion or simple HTTP triggers.
+
+## What it does
+
+- Serves a fullscreen viewer page at `/view`
+- Accepts color commands like `/red` or `/color/ff00ff`
+- Serves a status page at `/status`
+- Shows recent color swatches, viewer connections, command history, and a QR code
+
+## Install dependency
+
+```bash
+python -m pip install qrcode[pil]
+```
+
+## Run from source
+
+```bash
+python color_web_server_v1_2_6.py
+```
+
+## URLs
+
+- Status page: `http://SERVER_IP:9876/status`
+- Viewer page: `http://SERVER_IP:9876/view`
+
+## Example commands
+
+- `http://SERVER_IP:9876/red`
+- `http://SERVER_IP:9876/blue`
+- `http://SERVER_IP:9876/green`
+- `http://SERVER_IP:9876/color/ff00ff`
+
+## Companion setup
+
+Use Generic HTTP.
+
+Typical button action:
+- Method: `GET`
+- URI: `/red`
+
+Other example URIs:
+- `/blue`
+- `/green`
+- `/color/ff00ff`
+
+If your Companion action wants a full URL, use:
+- `http://SERVER_IP:9876/red`
+
+Leave JSON/body empty.
+
+## Build for Windows
+
+```powershell
+python -m pip install pyinstaller
+python -m PyInstaller --onefile --clean --name ColorWebServer color_web_server_v1_2_6.py
+```
+
+Output:
+- `dist\ColorWebServer.exe`
+
+## Build for macOS
+
+```bash
+python3 -m pip install pyinstaller
+python3 -m PyInstaller --onefile --clean --name ColorWebServer color_web_server_v1_2_6.py
+```
+
+## Build for Linux
+
+```bash
+python3 -m pip install pyinstaller
+python3 -m PyInstaller --onefile --clean --name ColorWebServer color_web_server_v1_2_6.py
+```
