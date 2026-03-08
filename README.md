@@ -1,4 +1,4 @@
-# Color Web Server v1.2.6
+# TallyPage v1.2.6
 
 A small browser-based color cue server for Companion or simple HTTP triggers.
 
@@ -7,7 +7,7 @@ A small browser-based color cue server for Companion or simple HTTP triggers.
 - Serves a fullscreen viewer page at `/view`
 - Accepts color commands like `/red` or `/color/ff00ff`
 - Serves a status page at `/status`
-- Shows recent color swatches, viewer connections, command history, and a QR code
+- Shows recent color swatches, viewer connections, command history, and a QR code to easily open the viewer link.
 
 ## Install dependency
 
