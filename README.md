@@ -1,4 +1,4 @@
-<img src="TallyPage_logo.png" width="500">
+<img src="TallyPage_logo_horizontal.png" width="500">
 
 
 # TallyPage v1.2.6
